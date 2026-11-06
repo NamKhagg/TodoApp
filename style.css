@@ -98,12 +98,35 @@ body {
     gap : 5px;
 }
 
+.todo-item.checked .content-item {
+    text-decoration: line-through;
+} 
+
+.todo-item.checked .checkbox {
+    background-color: #4338ca;
+}
+
 .checkbox {
     width: 20px;
     height: 20px;
     border-radius: 40px;
     background-color: antiquewhite;
     border : 1px solid black;
+
+    display : flex;
+    justify-content: center;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.delete-btn {
+    cursor: pointer;
+}
+
+.checkmark {
+    display: none;
 }
 
 .content-item {
@@ -112,4 +135,9 @@ body {
 
     display : flex;
     align-items: center;
+}
+
+.todo-item.checked .checkmark {
+    display: block;
+    color: aliceblue;
 }
